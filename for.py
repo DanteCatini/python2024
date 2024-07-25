@@ -1,7 +1,7 @@
-palabra = input("escriba una contrasena: ")
+contraseña = input("escriba una contrasena: ")
 listaContrasena = []
 
-for i in palabra:
+for i in contraseña:
         print("*", end="")
         listaContrasena.append(i)
 print() 
