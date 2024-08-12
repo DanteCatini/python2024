@@ -41,7 +41,7 @@ while True:
             print("no tienes tareas registradas")
         else:
             print(tareas)
-            num_tarea = input("decida que tarea eliminar (coloque el numero en que se encuentra esta tarea):")
+            num_tarea = int(input("decida que tarea eliminar (coloque el numero en que se encuentra esta tarea):"))
             if  1 <= num_tarea  == len(tareas):
                 tarea_eliminada = tareas.pop(num_tarea - 1)
                 print("la tarea ha sido eliminado correctamente")
