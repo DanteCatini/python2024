@@ -27,11 +27,13 @@ class personaje :
             if self.vida <= 0:
                 self.vida = 0
                 print(f"{self.nombre} ha muerto")
+                
+                
         else: 
             print(f"{self.nombre} ya esta muerto")
 
     def mostrar_info(self):
-# Metodo para mostrar la información del personaje
+
         estado = "vivo" if self.estado else "muerto"
         print(f"Personaje: {self.nombre}")
         print(f"Altura: {self.altura}")
