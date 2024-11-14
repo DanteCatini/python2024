@@ -12,6 +12,12 @@ def main():
     conn = conectar_db()
     cursor = conn.cursor()
 
+    cursor.execute('''CREATE TABLE IF NOT EXISTS Estudiantes (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        nombre TEXT,
+                        edad INTEGER,
+                        año_id INTEGER)''')
+
 
     while True:
         print("\nSistema de Gestión Escolar")
